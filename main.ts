@@ -1,9 +1,9 @@
 while (true) {
-    console.log("Light level in lux is: " + input.lightLevel())
-    if (input.lightLevel() >= 10) {
+    console.log("Light sound level in is: " + input.soundLevel())
+    if (input.soundLevel() + 4.6 > 50) {
         light.setAll(light.rgb(255, 0, 0))
-    } else if (input.lightLevel() < 10) {
-        light.setAll(light.rgb(0, 255, 0))
+    } else {
+        light.clear()
     }
     
 }
